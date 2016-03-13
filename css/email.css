@@ -1,11 +1,7 @@
-/* ------------------------------------- 
-		GLOBAL 
-------------------------------------- */
+/* GLOBAL */
 * { 
 	margin:0;
 	padding:0;
-}
-* { 	
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
@@ -14,16 +10,15 @@
 img { 
 	max-width: 100%; 
 }
-.collapse {
-	margin:0;
-	padding:0;
-}
-
 
 table {
     display: table;
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+table.body-wrap { 
+	width: 100%;
 }
 
 body {
@@ -39,7 +34,87 @@ h3{
 	font-size: 18px;
 	color: #5e5e63;
 	text-transform: uppercase;
+	margin-bottom: 8px;
 }
+
+p { 
+	font-family: 'HelveticaNeue-Medium';
+	color: #bfc0c3;
+	margin-bottom: 17px; 
+	font-size: 14px; 
+	line-height: 20px;
+}
+
+a { 
+	color: #2BA6CB;
+	text-decoration: none;
+}
+
+a:hover { 
+	text-decoration: underline;
+}
+
+.btn {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif; 
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 24px;
+	text-decoration:none;
+	color: #ffffff;
+	background-color: #53545e;
+	padding: 7px 13px;
+	margin-right:10px;
+	text-align:center;
+	cursor:pointer;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.bord_bottom {
+	border-bottom: 1px solid #eaeaea;
+}
+
+.bord_bottom_grey {
+	border-bottom: 1px solid #a6a7b0;
+}
+
+table.social {
+	background-color: #ebebeb;	
+}
+
+.container {
+	display:block!important; 
+	max-width:600px!important;
+	margin:0 auto!important; /* makes it centered */
+	clear:both!important;
+	padding: 0 30px;
+}
+
+.content {
+	padding: 30px 0;
+	max-width:600px;
+	margin:0 auto;
+	display:block; 
+	overflow: hidden;
+	width: 100%;
+}
+
+.content table {
+	width: 100%; 
+}
+
+.column_half {
+	width: 270px;
+	float:left;
+}
+
+.column_third {
+	width: 180px;
+	float:left;
+}
+
+
+/* FONTS */
 
 @font-face {
 	font-family: 'HelveticaNeue-Medium';
@@ -61,67 +136,89 @@ h3{
 	font-style: normal;
 }
 
-/* ------------------------------------- 
-		ELEMENTS 
-------------------------------------- */
-a { 
-	color: #2BA6CB;
-	text-decoration: none;
+
+/* HEADER */
+
+
+table.head-wrap {
+	width: 100%;
+	height: 100px;
 }
 
-a:hover { 
-	text-decoration: underline;
+.header.container {
+	height: 100%;
 }
 
-.btn {
+.header .content {
+	padding-top: 35px; 
+	padding-bottom: 0;
+}
+
+.header .content .column_half h1 {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif; 
 	font-weight: bold;
-	font-size: 14px;
-	line-height: 24px;
-	text-decoration:none;
+	padding: 5px 0 0 61px;
+	font-size: 30px;
 	color: #ffffff;
-	background-color: #53545e;
-	padding: 10px 13px;
-	margin-right:10px;
-	text-align:center;
-	cursor:pointer;
-	display: inline-block;
 	text-transform: uppercase;
 }
 
-.bord_bottom {
-	border-bottom: 1px solid #eaeaea;
+.header .content a:hover { 
+	text-decoration: none;
 }
 
-.bord_bottom_grey {
-	border-bottom: 1px solid #a6a7b0;
+.header .content .column_half h1 span {
+	font-size: inherit;
+	text-transform: inherit;
+	padding-left: 0;
+	color: #a6a7b0;
 }
 
-p.callout {
-	padding:15px;
-	background-color:#ECF8FF;
-	margin-bottom: 15px;
-}
-.callout a {
-	font-weight:bold;
-	color: #2BA6CB;
+.header .content .column_half span {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif; 
+	font-weight: bold;
+	font-size: 12px;
+	color: #f1f1f1;
+	font-weight: bold;
 }
 
-table.social {
-/* 	padding:15px; */
-	background-color: #ebebeb;
-	
+.link_online {
+	font-size: 12px;
+	color: #a6a7b0;
+	font-weight: bold;
 }
-.social .soc-btn {
-	padding: 3px 7px;
-	font-size:12px;
-	margin-bottom:10px;	
-	color: #FFF;font-weight:bold;
-	display:block;
-	text-align:center;
+
+.header .content .link_online:hover { 
+	text-decoration: underline;
 }
-  
-/*.fb .rss .pint .g .grib .in .fl*/
+
+.header.container table td.logo { padding: 15px; }
+.header.container table td.label { padding: 15px; padding-left:0px;}
+
+
+/* BODY */
+
+table.body-wrap { 
+	width: 100%;
+}
+
+.content.post {
+	padding: 25px 0;	
+}
+
+/*.content.post h3{
+	margin-top: 5px;
+}*/
+
+/* FOOTER */
+
+.content.social {
+	padding: 25px 0 20px 0;
+}
+
+.social h3 {
+	padding-top: 7px;
+}
 .social_links span{
 	display: inline-block;
     width: 34px;
@@ -138,10 +235,6 @@ table.social {
     overflow: hidden;
     text-decoration: none;
     text-indent: -9999px;
-}
-
-tbody {
-	width: 100%;
 }
 
 .fb {
@@ -165,151 +258,23 @@ tbody {
 }
 
 .fl {
-    background: url("../img/social-icons.png") -264px 0;
-}
-/* ------------------------------------- 
-		HEADER 
-------------------------------------- */
-table.head-wrap {
-	width: 100%;
-	height: 100px;
-}
+	background: url("../img/social-icons.png") -264px 0;
+	}
 
-.header.container {
-	height: 100%;
-}
-
-.header .content {
-	padding-top: 35px; 
-	padding-bottom: 0;
-}
-
-.header .content h1 {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif; 
-	font-weight: bold;
-	padding-left: 18px;
-	font-size: 30px;
-	color: #ffffff;
-	text-transform: uppercase;
-}
-
-.header .content a:hover { 
-	text-decoration: none;
-}
-
-.header .content h1 span {
-	font-size: inherit;
-	text-transform: inherit;
-	padding-left: 0;
-	color: #a6a7b0;
-}
-
-.header .content span {
-	font-size: 12px;
-	color: #f1f1f1;
-	font-weight: bold;
-}
-
-.link_online {
-	font-size: 12px;
-	color: #a6a7b0;
-	font-weight: bold;
-}
-
-.header .content .link_online:hover { 
-	text-decoration: underline;
-}
-
-.header.container table td.logo { padding: 15px; }
-.header.container table td.label { padding: 15px; padding-left:0px;}
-
-
-/* ------------------------------------- 
-		BODY 
-------------------------------------- */
-table.body-wrap { width: 100%;}
-
-
-/* ------------------------------------- 
-		FOOTER 
-------------------------------------- */
-table.footer-wrap { width: 100%;	clear:both!important;
-}
-.footer-wrap .container td.content  p { border-top: 1px solid rgb(215,215,215); padding-top:15px;}
-.footer-wrap .container td.content p {
-	font-size:10px;
-	font-weight: bold;
-	
-}
-
-
-/* ------------------------------------- 
-		TYPOGRAPHY 
-------------------------------------- */
-
-
-.collapse { margin:0!important;}
-
-p { 
-	font-family: 'HelveticaNeue-Medium';
-	color: #bfc0c3;
-	margin-bottom: 10px; 
-	font-size: 14px; 
-	line-height: 20px;
-}
-
-
-p.lead { font-size:17px; }
-p.last { margin-bottom:0px;}
-
-ul li {
-	margin-left:5px;
-	list-style-position: inside;
-}
-
-
-/* --------------------------------------------------- 
-		RESPONSIVENESS
-		Nuke it from orbit. It's the only way to be sure. 
------------------------------------------------------- */
-
-/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
-.container {
-	display:block!important; 
-	max-width:600px!important;
-	margin:0 auto!important; /* makes it centered */
+table.footer-wrap { 
+	width: 100%;	
 	clear:both!important;
-	padding: 0 30px;
-}
-
-/* This should also be a block element, so that it will fill 100% of the .container */
-.content {
-	padding: 30px 0;
-	max-width:600px;
-	margin:0 auto;
-	display:block; 
-	overflow: hidden;
-}
-
-/* Let's make sure tables in the content area are 100% wide */
-.content table { width: 100%; }
-
-
-/* Odds and ends */
-.column_half {
-	width: 270px;
-	float:left;
-}
-
-.column_third {
-	width: 180px;
-	float:left;
 }
 
 .footer_links .column {
 	width: 133px;
 	text-align: left;
 	padding-left: 16px;
+}
+
+.footer_links p {
+	width: 407px;
+	text-align: left;
 }
 
 .footer_links p {
@@ -342,6 +307,10 @@ ul li {
 	background: url("../img/arrow-right.png") no-repeat;
 }
 
+.copyright {
+	padding: 10px 0 0 0;
+}
+
 .copyright p,a {
 	font-family: 'HelveticaNeue-Regular';
 	color: #a6a7b0;
@@ -349,40 +318,31 @@ ul li {
 	line-height: 24px;
 }
 
-.copyright p span {
+.copyright p a {
 	color: #ffffff;
+	padding-right: 0;
 }
 
-.column tr td { padding: 15px; }
-.column-wrap { 
-	padding:0!important; 
-	margin:0 auto; 
-	max-width:600px!important;
-}
-.column table { width:100%;}
-.social .column {
-	width: 280px;
-	min-width: 279px;
-	float:left;
+.copyright a:first-child {
+	position: relative;
+	padding-right: 16px;
 }
 
-/* Be sure to place a .clear element after each set of columns, just to be safe */
-.clear { display: block; clear: both; }
+.copyright a:first-child:after {
+	position: absolute;
+	content: "";
+	background: url("../img/vert-line.png");
+	width: 2px;
+	height: 13px;
+	top: 0;
+	right: 5px;
+}
 
+.copyright .column_half p a {
+	content: none;
+	padding-right: 0;
+}
 
-/* ------------------------------------------- 
-		PHONE
-		For clients that support media queries.
-		Nothing fancy. 
--------------------------------------------- */
-@media only screen and (max-width: 600px) {
-	
-	a[class="btn"] { display:block!important; margin-bottom:10px!important; background-image:none!important; margin-right:0!important;}
-
-	div[class="column"] { width: auto!important; float:none!important;}
-	
-	table.social div[class="column"] {
-		width:auto!important;
-	}
-
+.copyright .column_half p a:first-child:after {
+	content: none;
 }

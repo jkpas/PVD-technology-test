@@ -562,6 +562,7 @@ body {
   color: #ffffff;
   line-height: 24px;
   padding: 0;
+  background-color: transparent;
 }
 
 .main_nav #navbar ul li a:hover {
@@ -569,12 +570,6 @@ body {
     text-decoration: underline;
 }
 
-.main_nav #navbar ul li a:visited {
-    outline: none;
-    outline-offset: 0;
-    text-decoration: none;
-    background-color: transparent;
-}
 
 /*task3 breadcrumbs -----------------------------------------------------------------------------*/
 

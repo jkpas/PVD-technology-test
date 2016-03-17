@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 	$('#main').click(function(){  
         $.ajax({  
-            url: "/main.html",  
+            url: "main.html",  
             cache: false,  
             success: function(html){  
     	        $("#page_content").html(html);  
@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 	$('#catalog').click(function(){  
         $.ajax({  
-            url: "/catalog.html",  
+            url: "catalog.html",  
             cache: false,  
             success: function(html){  
     	        $("#page_content").html(html);  
@@ -46,7 +46,7 @@ $(document).ready(function(){
               
     $('#deliver').click(function(){  
         $.ajax({  
-            url: "/deliver.html",  
+            url: "deliver.html",  
             cache: false,  
             success: function(html){  
     	        $("#page_content").html(html);  
@@ -56,7 +56,7 @@ $(document).ready(function(){
 
     $('#price-list').click(function(){  
         $.ajax({  
-            url: "/catalog.html",  
+            url: "catalog.html",  
             cache: false,  
             success: function(html){  
     	        $("#page_content").html(html);  
@@ -66,7 +66,7 @@ $(document).ready(function(){
 
     $('#contacts').click(function(){  
         $.ajax({  
-            url: "/deliver.html",  
+            url: "deliver.html",  
             cache: false,  
             success: function(html){  
     	        $("#page_content").html(html);  

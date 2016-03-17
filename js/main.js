@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+// adaptive ------------
+
 	if (window.matchMedia('(max-width: 900px)').matches)
 	{
 	     $(".copyright").remove().insertAfter($(".footer_logo"));
@@ -8,6 +10,8 @@ $(document).ready(function(){
 	{
 	     $(".left_sidebar").remove().insertAfter($(".content"));
 	};
+
+// alax for php mailer --------------------   
 
 	$("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
         var form_data = $(this).serialize(); //собераем все данные из формы
@@ -23,58 +27,12 @@ $(document).ready(function(){
 	   	return false;
 	});	
 
-	$('#main').click(function(){  
-        $.ajax({  
-            url: "main.html",  
-            cache: false,  
-            success: function(html){  
-    	        $("#page_content").html(html);  
-            }  
-        });  
-    }); 
-
-
-	$('#catalog').click(function(){  
-        $.ajax({  
-            url: "catalog.html",  
-            cache: false,  
-            success: function(html){  
-    	        $("#page_content").html(html);  
-            }  
-        });  
-    });  
-              
-    $('#deliver').click(function(){  
-        $.ajax({  
-            url: "deliver.html",  
-            cache: false,  
-            success: function(html){  
-    	        $("#page_content").html(html);  
-            }  
-        });  
-    });  
-
-    $('#price-list').click(function(){  
-        $.ajax({  
-            url: "catalog.html",  
-            cache: false,  
-            success: function(html){  
-    	        $("#page_content").html(html);  
-            }  
-        });  
-    }); 
-
-    $('#contacts').click(function(){  
-        $.ajax({  
-            url: "deliver.html",  
-            cache: false,  
-            success: function(html){  
-    	        $("#page_content").html(html);  
-            }  
-        });  
-    });       
+// ajax change pages -----------------     
 	
-
+    $('#navbar ul li a').click(function(){
+       $("#page_content").load($(this).attr("id") + ".html");
+       return false;
+    });
 
 
 

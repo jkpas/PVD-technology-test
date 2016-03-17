@@ -20,12 +20,23 @@ $(document).ready(function(){
 	            alert("Ваше сообщение отпрвлено!");
 	       	}
 	   	});
+	   	return false;
 	});	
+
+	$('#main').click(function(){  
+        $.ajax({  
+            url: "/main.html",  
+            cache: false,  
+            success: function(html){  
+    	        $("#page_content").html(html);  
+            }  
+        });  
+    }); 
 
 
 	$('#catalog').click(function(){  
         $.ajax({  
-            url: "/page1.html",  
+            url: "/catalog.html",  
             cache: false,  
             success: function(html){  
     	        $("#page_content").html(html);  
@@ -33,16 +44,35 @@ $(document).ready(function(){
         });  
     });  
               
-            // $('#btn2').click(function(){  
-            //     $.ajax({  
-            //         url: "page2.html",  
-            //         cache: false,  
-            //         success: function(html){  
-            //             $("#content").html(html);  
-            //         }  
-            //     });  
-            // });  
-              
+    $('#deliver').click(function(){  
+        $.ajax({  
+            url: "/deliver.html",  
+            cache: false,  
+            success: function(html){  
+    	        $("#page_content").html(html);  
+            }  
+        });  
+    });  
+
+    $('#price-list').click(function(){  
+        $.ajax({  
+            url: "/catalog.html",  
+            cache: false,  
+            success: function(html){  
+    	        $("#page_content").html(html);  
+            }  
+        });  
+    }); 
+
+    $('#contacts').click(function(){  
+        $.ajax({  
+            url: "/deliver.html",  
+            cache: false,  
+            success: function(html){  
+    	        $("#page_content").html(html);  
+            }  
+        });  
+    });       
 	
 
 

@@ -58,20 +58,20 @@ body {
 
 @font-face {
   font-family: 'Arial-Regular';
-  src: url('../fonts/Arial-Regular.eot');
-  src: local('☺'), url('../fonts/Arial-Regular.woff') format('woff'), 
-  url('../fonts/Arial-Regular.ttf') format('truetype'), 
-  url('../fonts/Arial-Regular.svg') format('svg');
+  src: url('../fonts/arial-regular.eot');
+  src: local('☺'), url('../fonts/arial-regular.woff') format('woff'), 
+  url('../fonts/arial-regular.ttf') format('truetype'), 
+  url('../fonts/arial-regular.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PT-Sans';
-  src: url('../fonts/PT-Sans.eot');
-  src: local('☺'), url('../fonts/PT-Sans.woff') format('woff'), 
-  url('../fonts/PT-Sans.ttf') format('truetype'), 
-  url('../fonts/PT-Sans.svg') format('svg');
+  src: url('../fonts/pt-sans.eot');
+  src: local('☺'), url('../fonts/pt-sans.woff') format('woff'), 
+  url('../fonts/pt-sans.ttf') format('truetype'), 
+  url('../fonts/pt-sans.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
